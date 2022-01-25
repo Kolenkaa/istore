@@ -135,7 +135,8 @@ body {
 	}
 }
 
-.mobile-menu--phoneicons {
+.phoneicons,
+.phoneicons-close {
 	cursor: pointer;
 }
 
@@ -144,7 +145,7 @@ body {
 	.header__top,
 	.header__logo,
 	.mobile-menu--navigation,
-	.mobile-menu--phoneicons---close,
+	.phoneicons-close,
 	nav.menu {
 		display: none;
 	}
@@ -259,6 +260,16 @@ body {
 		.header__contacts-social {
 			display: flex;
 			justify-content: center;
+		}
+	}
+
+	.phoneicons.active {
+		.phoneicons svg {
+			display: none;
+		}
+
+		.phoneicons-close {
+			display: block;
 		}
 	}
 }

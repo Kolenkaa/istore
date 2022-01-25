@@ -107,7 +107,8 @@ body {
   .burger.active::after {
     transform: rotate(-45deg) translate(0, -7px); }
 
-.mobile-menu--phoneicons {
+.phoneicons,
+.phoneicons-close {
   cursor: pointer; }
 
 /*---------------- HEADER <767px -----------*/
@@ -115,7 +116,7 @@ body {
   .header__top,
   .header__logo,
   .mobile-menu--navigation,
-  .mobile-menu--phoneicons---close,
+  .phoneicons-close,
   nav.menu {
     display: none; }
 
@@ -206,6 +207,11 @@ body {
       margin-right: 0; }
     .header__top.active .header__contacts-social {
       display: flex;
-      justify-content: center; } }
+      justify-content: center; }
+
+  .phoneicons.active .phoneicons svg {
+    display: none; }
+  .phoneicons.active .phoneicons-close {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
