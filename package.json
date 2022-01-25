@@ -1,24 +1,26 @@
 {
-  "name": "istore",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kolenkaa/istore.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kolenkaa/istore/issues"
-  },
-  "homepage": "https://github.com/Kolenkaa/istore#readme",
-  "devDependencies": {
-    "concurrently": "^7.0.0",
-    "livereload": "^0.9.3",
-    "sass": "^1.49.0"
-  }
+	"name": "istore",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"livereload": "browser-sync start --server 'src' --files 'src/index.html' --files 'src/css/*.css' ",
+		"sass:watch": "sass --watch 'src/scss/style.scss:src/css/style.css'",
+		"dev": "concurrently 'npm:sass:watch' 'npm:livereload'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Kolenkaa/istore.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Kolenkaa/istore/issues"
+	},
+	"homepage": "https://github.com/Kolenkaa/istore#readme",
+	"devDependencies": {
+		"browser-sync": "^2.27.7",
+		"concurrently": "^7.0.0",
+		"livereload": "^0.9.3"
+	}
 }
