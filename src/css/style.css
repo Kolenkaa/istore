@@ -36,6 +36,9 @@ body {
   font-style: normal; }
 
 /*---------------- HEADER -----------*/
+.container {
+  width: 100%; }
+
 .header__top {
   background-color: #111111;
   padding: 11px 32px; }
@@ -81,7 +84,8 @@ body {
 /*--------------MENU & BURGER-----------------*/
 .mobile-menu,
 .burger,
-.header__contacts-social {
+.header__contacts-social,
+.header__contacts-mobile {
   display: none; }
 
 .burger {
@@ -103,21 +107,15 @@ body {
   .burger.active::after {
     transform: rotate(-45deg) translate(0, -7px); }
 
-.mobile-menu--phoneicons.active .header__contacts-social {
-  display: block; }
-.mobile-menu--phoneicons.active .header__contacts-adress {
-  display: block;
-  color: #000000; }
+.mobile-menu--phoneicons {
+  cursor: pointer; }
 
 /*---------------- HEADER <767px -----------*/
 @media (max-width: 767px) {
-  .container {
-    padding-left: 18px;
-    padding-right: 16px; }
-
   .header__top,
   .header__logo,
   .mobile-menu--navigation,
+  .mobile-menu--phoneicons---close,
   nav.menu {
     display: none; }
 
@@ -162,6 +160,52 @@ body {
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-color: #e5e5e5; } }
+    background-color: #e5e5e5; }
+
+  .header__top.active .contacts__link:first-child {
+    order: 3; }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 16px; }
+
+  .link__phone:last-child {
+    margin-top: 16px; }
+
+  .header__contacts-social > :not(:first-child) {
+    margin-left: 28px; }
+
+  .link__mail {
+    margin-top: 20px;
+    margin-bottom: 24px; }
+
+  .header__top.active {
+    display: block;
+    background-color: #ffffff;
+    margin-top: 70px;
+    padding: 32px 0 40px 0; }
+    .header__top.active .header__contacts {
+      display: block; }
+    .header__top.active .header__contacts-adress {
+      display: none; }
+    .header__top.active .header__contacts-contacts {
+      display: flex;
+      flex-direction: column; }
+    .header__top.active .contacts__link {
+      color: #000000;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      margin-right: 0; }
+    .header__top.active .header__contacts-social {
+      display: flex;
+      justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */

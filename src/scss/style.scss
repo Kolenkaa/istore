@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Wendy+One&display=swap&subset=cyrillic-ext");
-
 /*Обнуление*/
 *,
 *::before,
@@ -41,12 +40,10 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
+
 /*---------------- HEADER -----------*/
-
-.header {
-}
-
 .container {
+	width: 100%;
 }
 
 .header__top {
@@ -105,7 +102,8 @@ body {
 /*--------------MENU & BURGER-----------------*/
 .mobile-menu,
 .burger,
-.header__contacts-social {
+.header__contacts-social,
+.header__contacts-mobile {
 	display: none;
 }
 
@@ -132,32 +130,21 @@ body {
 	&.active::before {
 		transform: rotate(45deg) translate(0, 7px);
 	}
-
 	&.active::after {
 		transform: rotate(-45deg) translate(0, -7px);
 	}
 }
 
-.mobile-menu--phoneicons.active {
-	.header__contacts-social {
-		display: block;
-	}
-	.header__contacts-adress {
-		display: block;
-		color: #000000;
-	}
+.mobile-menu--phoneicons {
+	cursor: pointer;
 }
 
 /*---------------- HEADER <767px -----------*/
 @media (max-width: 767px) {
-	.container {
-		padding-left: 18px;
-		padding-right: 16px;
-	}
-
 	.header__top,
 	.header__logo,
 	.mobile-menu--navigation,
+	.mobile-menu--phoneicons---close,
 	nav.menu {
 		display: none;
 	}
@@ -212,5 +199,66 @@ body {
 		width: 100%;
 		height: 1px;
 		background-color: #e5e5e5;
+	}
+
+	.header__top.active .contacts__link:first-child {
+		order: 3;
+	}
+
+	.mobile-menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		padding-left: 18px;
+		padding-right: 16px;
+	}
+
+	.link__phone:last-child {
+		margin-top: 16px;
+	}
+	.header__contacts-social > :not(:first-child) {
+		margin-left: 28px;
+	}
+
+	.link__mail {
+		margin-top: 20px;
+		margin-bottom: 24px;
+	}
+
+	.header__top.active {
+		display: block;
+		background-color: #ffffff;
+		margin-top: 70px;
+		padding: 32px 0 40px 0;
+
+		.header__contacts {
+			display: block;
+		}
+
+		.header__contacts-adress {
+			display: none;
+		}
+
+		.header__contacts-contacts {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.contacts__link {
+			color: #000000;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 500;
+			display: flex;
+			justify-content: center;
+			margin-right: 0;
+		}
+
+		.header__contacts-social {
+			display: flex;
+			justify-content: center;
+		}
 	}
 }
