@@ -273,3 +273,156 @@ body {
 		}
 	}
 }
+
+/*--------------- HOME PAGE------------------*/
+
+main {
+	overflow: hidden;
+}
+
+.home-page {
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+
+	&__hero {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-auto-flow: row;
+	}
+
+	&__call {
+		background: linear-gradient(0deg, #ffffff 29.68%, rgba(255, 255, 255, 0) 172.53%),
+			linear-gradient(0deg, #efefef, #efefef);
+
+		position: relative;
+		max-width: 1000px;
+		max-height: 804px;	
+
+		grid-column: 1;
+		grid-row: 1 / 3;
+	}
+
+	&__call-content {
+		padding: 96px 0 0 130px;
+	}
+
+	&__call-title {
+		font-weight: 700px;
+		font-size: 64px;
+		line-height: 64px;
+		color: #000000;
+		max-width: 520px;
+	}
+
+	&__call-description {
+		margin-top: 16px;
+		font-size: 20px;
+		line-height: 32px;
+		color: #5b5b5b;
+		max-width: 390px;
+	}
+
+	&__call-photo {		
+	}
+
+	&__call-photo img {		
+	}
+
+	&__calculator-repair {
+		background: linear-gradient(328.46deg, #ffffff 16.44%, rgba(255, 255, 255, 0) 102.9%),
+			linear-gradient(0deg, #dfdfdf, #dfdfdf);
+
+		position: relative;
+		max-width: 440px;
+		max-height: 402px;
+	}
+
+	&__calculator-repair--content {		
+		padding: 40px 0 0 40px;
+	}
+
+	&__calculator-repair--title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 36px;
+		color: #000000;
+	}
+
+	&__calculator-repair--description {
+		margin-top: 4px;
+		font-size: 16px;
+		line-height: 24px;
+		color: #5b5b5b;
+	}
+
+	&__calculator-repair--photo {
+		transform: translateY(-70px);	
+	}
+
+	&__trade-in {
+		background: linear-gradient(344.28deg, #ffffff 35.09%, rgba(255, 255, 255, 0) 81.62%),
+			linear-gradient(0deg, #bababa, #bababa);
+
+		position: relative;
+		max-width: 440px;
+		max-height: 402px;
+	}
+
+	&__trade-in--content {		
+		padding: 40px 0 0 40px;
+	}
+
+	&__trade-in--title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 36px;
+		color: #000000;
+	}
+
+	&__trade-in--description {
+		margin-top: 4px;
+		font-size: 16px;
+		line-height: 24px;
+		color: #5b5b5b;
+	}
+
+	&__button {
+	}
+
+	&__trade-in--photo {
+		transform: translateY(-50px);		
+	}
+}
+.btn {
+}
+.home-pade {
+	&__call-btn {
+		margin-top: 24px;
+		margin-bottom: 50px;
+		padding: 12px 24px;
+		border-radius: 24px;
+		background-color: #2c6dec;
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__calculator-repair--btn {
+		margin-top: 16px;
+		border: none;
+		background-color: inherit;
+	}
+
+	&__trade-in--btn {
+		margin-top: 16px;
+		border: none;
+		background-color: inherit;
+	}
+
+	&__trade-in--button {
+	}
+}
