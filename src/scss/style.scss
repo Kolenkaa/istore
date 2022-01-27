@@ -672,7 +672,7 @@ main {
 		margin-right: 16px;
 	}
 
-	.link {		
+	.link {
 		&__phone {
 			font-weight: 500;
 			line-height: 20px;
@@ -722,4 +722,82 @@ main {
 	&__copyright-name {
 		align-self: end;
 	}
+}
+
+/*------------ MODAL -----------*/
+
+.modal {
+	&__container {
+		display: flex;
+		width: 696px;
+		height: 356px;
+		border-radius: 20px;
+		position: relative;
+	}
+
+	&__body {
+		padding: 64px 0 0 64px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 36px;
+		color: #000000;
+		max-width: 312px;
+	}
+
+	&__description {
+		font-weight: 500;
+		line-height: 20px;
+		color: #5b5b5b;
+		margin-top: 32px;
+	}
+
+	&__call-order--form {
+		margin-top: 12px;
+		position: relative;
+	}
+
+	&__call-order--user---tel {
+	}
+
+	&__call-order--number---tel {
+		padding: 16px 132px 16px 16px;
+		border-radius: 8px;
+	}
+
+	&__call-order--btn {
+		position: absolute;
+		padding: 12px 16px;
+		background-color: #2c6dec;
+		border-radius: 4px;
+		font-weight: 500;
+		line-height: 16px;
+		color: #ffffff;
+		top: 5px;
+		right: 5px;
+		border: none;
+	}
+
+	&__call-order--personal---data {
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+		opacity: 24%;
+		margin-top: 12px;
+		max-width: 312px;
+	}
+	&__photo {
+	}
+
+	&__close-btn {
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		right: 60px;
+		top: 5px;
+	}
+}
+.btn {
 }

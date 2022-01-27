@@ -506,4 +506,55 @@ main {
   .footer__copyright-name {
     align-self: end; }
 
+/*------------ MODAL -----------*/
+.modal__container {
+  display: flex;
+  width: 696px;
+  height: 356px;
+  border-radius: 20px;
+  position: relative; }
+.modal__body {
+  padding: 64px 0 0 64px; }
+.modal__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000000;
+  max-width: 312px; }
+.modal__description {
+  font-weight: 500;
+  line-height: 20px;
+  color: #5b5b5b;
+  margin-top: 32px; }
+.modal__call-order--form {
+  margin-top: 12px;
+  position: relative; }
+.modal__call-order--number---tel {
+  padding: 16px 132px 16px 16px;
+  border-radius: 8px; }
+.modal__call-order--btn {
+  position: absolute;
+  padding: 12px 16px;
+  background-color: #2c6dec;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+  top: 5px;
+  right: 5px;
+  border: none; }
+.modal__call-order--personal---data {
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  opacity: 24%;
+  margin-top: 12px;
+  max-width: 312px; }
+.modal__close-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 60px;
+  top: 5px; }
+
 /*# sourceMappingURL=style.css.map */
