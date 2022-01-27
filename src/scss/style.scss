@@ -334,7 +334,6 @@ main {
 	}
 
 	&__call-photo img {
-		//object-fit: cover;
 		width: 100%;
 	}
 
@@ -405,6 +404,7 @@ main {
 }
 .btn {
 	cursor: pointer;
+	border: none;
 }
 .home-pade {
 	&__call-btn {
@@ -444,13 +444,12 @@ main {
 	max-width: 1440px;
 	margin: 0 auto;
 
-
 	&__content {
 		position: absolute;
 		z-index: 1;
 		padding: 132px 0 0 132px;
 		width: 100%;
-		max-width: 540px;		
+		max-width: 540px;
 	}
 
 	&__title {
@@ -467,11 +466,11 @@ main {
 		margin-top: 4px;
 	}
 
-	&__image {		
+	&__image {
 		position: relative;
 		width: 100%;
 		max-width: 1440px;
-		height: auto;		
+		height: auto;
 	}
 }
 
@@ -520,13 +519,191 @@ main {
 	}
 
 	&__warranty-repair--image,
-	&__used-iphones--image {	
+	&__used-iphones--image {
 		max-width: 720px;
 		max-height: 496px;
 		position: relative;
 		width: 100%;
 		max-width: 1440px;
-		height: auto;	
+		height: auto;
 	}
 }
 
+/*---------- SERVICE LIST -----------*/
+
+.service-list {
+	padding: 112px;
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 104px;
+	grid-row-gap: 80px;
+
+	&__repair-title,
+	&__diagnostics-title,
+	&__sale-accessories--title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 18px;
+	}
+
+	&__warranty-replacement--title,
+	&__sales-iphone--title,
+	&__help-master--title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 18px;
+	}
+
+	&__repair-description,
+	&__diagnostics-description,
+	&__sale-accessories--description,
+	&__warranty-replacement--description,
+	&__sales-iphone--description,
+	&__help-master--description {
+		font-size: 16px;
+		line-height: 24px;
+		color: #959595;
+		margin-top: 12px;
+	}
+}
+
+/*------------ FOOTER --------------*/
+
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: #111111;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__call-order {
+		max-width: 320px;
+	}
+
+	&__call-order--title,
+	&__contacts-description,
+	&__adress-location--title,
+	&__adress-working--hours---title {
+		font-size: 18px;
+		line-height: 24px;
+		color: #ffffff;
+		opacity: 32%;
+	}
+
+	&__call-order--description {
+		font-weight: 500;
+		line-height: 20px;
+		color: #ffffff;
+		margin-top: 4px;
+	}
+
+	&__call-order--form {
+		margin-top: 12px;
+		position: relative;
+	}
+
+	&__call-order--user---tel {
+	}
+
+	&__call-order--number---tel {
+		padding: 16px 132px 16px 16px;
+		border-radius: 8px;
+		border: none;
+	}
+
+	&__call-order--btn {
+		padding: 12px 16px;
+		border-radius: 4px;
+		background-color: #2c6dec;
+		color: #ffffff;
+
+		position: absolute;
+		right: 6px;
+		top: 4px;
+	}
+
+	&__call-order--personal---data {
+		font-size: 12px;
+		line-height: 16px;
+		color: #ffffff;
+		opacity: 24%;
+		margin-top: 12px;
+	}
+
+	&__data-us {
+		display: flex;
+	}
+
+	&__map {
+		max-width: 148px;
+		width: 100%;
+		max-height: 148px;
+		height: 100%;
+		margin-right: 64px;
+	}
+
+	&__contacts {
+		margin-right: 45px;
+	}
+
+	&__contacts-our--contacts {
+	}
+
+	&__adress {
+	}
+
+	&__adress-location {
+	}
+
+	&__adress-location--description,
+	&__adress-working--hours---description {
+		font-weight: 500;
+		line-height: 20px;
+		color: #ffffff;
+		margin-top: 4px;
+	}
+
+	&__adress-working--hours {
+		margin-top: 40px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 100px;
+	}
+
+	&__logo svg {
+		fill: #ffffff;
+	}
+
+	&__copyright {
+		display: flex;
+		align-items: center;
+	}
+
+	&__copyright-description {
+		line-height: 16px;
+		color: #ffffff;
+	}
+
+	&__copyright-name {
+		align-self: end;
+	}
+}
+.container {
+	padding: 64px 112px;
+}
+
+.btn {
+}
