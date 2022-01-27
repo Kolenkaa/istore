@@ -580,6 +580,7 @@ main {
 	position: relative;
 	width: 100%;
 	background-color: #111111;
+	padding: 64px 112px;
 
 	&__top {
 		display: flex;
@@ -610,9 +611,6 @@ main {
 	&__call-order--form {
 		margin-top: 12px;
 		position: relative;
-	}
-
-	&__call-order--user---tel {
 	}
 
 	&__call-order--number---tel {
@@ -657,12 +655,36 @@ main {
 	}
 
 	&__contacts-our--contacts {
+		display: flex;
+		flex-direction: column;
+		margin-top: 4px;
 	}
 
-	&__adress {
+	&__contacts-social {
+		margin-top: 28px;
 	}
 
-	&__adress-location {
+	&__contacts-social--link svg {
+		fill: #ffffff;
+	}
+
+	&__contacts-social--link:not(:last-child) {
+		margin-right: 16px;
+	}
+
+	.link {		
+		&__phone {
+			font-weight: 500;
+			line-height: 20px;
+			color: #ffffff;
+		}
+
+		&__mail {
+			font-weight: 500;
+			line-height: 20px;
+			color: #ffffff;
+			margin-top: 4px;
+		}
 	}
 
 	&__adress-location--description,
@@ -700,10 +722,4 @@ main {
 	&__copyright-name {
 		align-self: end;
 	}
-}
-.container {
-	padding: 64px 112px;
-}
-
-.btn {
 }

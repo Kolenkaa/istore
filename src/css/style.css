@@ -417,7 +417,8 @@ main {
 .footer {
   position: relative;
   width: 100%;
-  background-color: #111111; }
+  background-color: #111111;
+  padding: 64px 112px; }
   .footer__top {
     display: flex;
     justify-content: space-between; }
@@ -464,6 +465,25 @@ main {
     margin-right: 64px; }
   .footer__contacts {
     margin-right: 45px; }
+  .footer__contacts-our--contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px; }
+  .footer__contacts-social {
+    margin-top: 28px; }
+  .footer__contacts-social--link svg {
+    fill: #ffffff; }
+  .footer__contacts-social--link:not(:last-child) {
+    margin-right: 16px; }
+  .footer .link__phone {
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff; }
+  .footer .link__mail {
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 4px; }
   .footer__adress-location--description, .footer__adress-working--hours---description {
     font-weight: 500;
     line-height: 20px;
@@ -485,8 +505,5 @@ main {
     color: #ffffff; }
   .footer__copyright-name {
     align-self: end; }
-
-.container {
-  padding: 64px 112px; }
 
 /*# sourceMappingURL=style.css.map */
