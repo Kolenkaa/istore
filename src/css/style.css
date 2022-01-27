@@ -235,9 +235,9 @@ main {
     grid-column: 1;
     grid-row: 1 / 3; }
   .home-page__call-content {
-    padding: 96px 0 0 130px; }
+    padding: 96px 0 0 132px; }
   .home-page__call-title {
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 64px;
     line-height: 64px;
     color: #000000;
@@ -320,5 +320,68 @@ main {
   background-color: inherit;
   z-index: 9;
   position: absolute; }
+
+/*--------LOCATION---------------*/
+.location {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; }
+  .location__content {
+    position: absolute;
+    z-index: 1;
+    padding: 132px 0 0 132px;
+    width: 100%;
+    max-width: 540px; }
+  .location__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000; }
+  .location__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5b5b5b;
+    margin-top: 4px; }
+  .location__image {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: auto; }
+
+/*----------SERVICE-----------*/
+.service {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex; }
+  .service__warranty-repair, .service__used-iphones {
+    position: relative;
+    max-width: 720px;
+    max-height: 496px; }
+  .service__warranty-repair--content, .service__used-iphones--content {
+    position: absolute;
+    z-index: 1;
+    padding: 56px 0 0 56px; }
+  .service__warranty-repair--title, .service__used-iphones--title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000; }
+  .service__warranty-repair--description, .service__used-iphones--description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5b5b5b;
+    margin-top: 4px; }
+  .service__warranty-repair--btn, .service__used-iphones--btn {
+    border: none;
+    margin-top: 16px; }
+  .service__warranty-repair--image, .service__used-iphones--image {
+    max-width: 720px;
+    max-height: 496px;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: auto; }
 
 /*# sourceMappingURL=style.css.map */

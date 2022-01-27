@@ -306,11 +306,11 @@ main {
 	}
 
 	&__call-content {
-		padding: 96px 0 0 130px;
+		padding: 96px 0 0 132px;
 	}
 
 	&__call-title {
-		font-weight: 700px;
+		font-weight: 700;
 		font-size: 64px;
 		line-height: 64px;
 		color: #000000;
@@ -399,7 +399,7 @@ main {
 	&__button {
 	}
 
-	&__trade-in--photo {		
+	&__trade-in--photo {
 		position: relative;
 	}
 }
@@ -422,7 +422,7 @@ main {
 	&__calculator-repair--btn {
 		margin-top: 16px;
 		border: none;
-		background-color: inherit;		
+		background-color: inherit;
 		z-index: 9;
 		position: absolute;
 	}
@@ -430,8 +430,103 @@ main {
 	&__trade-in--btn {
 		margin-top: 16px;
 		border: none;
-		background-color: inherit;		
+		background-color: inherit;
 		z-index: 9;
 		position: absolute;
 	}
 }
+
+/*--------LOCATION---------------*/
+
+.location {
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+
+
+	&__content {
+		position: absolute;
+		z-index: 1;
+		padding: 132px 0 0 132px;
+		width: 100%;
+		max-width: 540px;		
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 36px;
+		color: #000000;
+	}
+
+	&__description {
+		font-size: 16px;
+		line-height: 24px;
+		color: #5b5b5b;
+		margin-top: 4px;
+	}
+
+	&__image {		
+		position: relative;
+		width: 100%;
+		max-width: 1440px;
+		height: auto;		
+	}
+}
+
+/*----------SERVICE-----------*/
+
+.service {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+
+	&__warranty-repair,
+	&__used-iphones {
+		position: relative;
+		max-width: 720px;
+		max-height: 496px;
+	}
+
+	&__warranty-repair--content,
+	&__used-iphones--content {
+		position: absolute;
+		z-index: 1;
+		padding: 56px 0 0 56px;
+	}
+
+	&__warranty-repair--title,
+	&__used-iphones--title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 36px;
+		color: #000000;
+	}
+
+	&__warranty-repair--description,
+	&__used-iphones--description {
+		font-size: 16px;
+		line-height: 24px;
+		color: #5b5b5b;
+		margin-top: 4px;
+	}
+
+	&__warranty-repair--btn,
+	&__used-iphones--btn {
+		border: none;
+		margin-top: 16px;
+	}
+
+	&__warranty-repair--image,
+	&__used-iphones--image {	
+		max-width: 720px;
+		max-height: 496px;
+		position: relative;
+		width: 100%;
+		max-width: 1440px;
+		height: auto;	
+	}
+}
+
