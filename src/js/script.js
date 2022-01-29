@@ -24,9 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const openModal = document.getElementById('open__modal');
 const openModalRepair = document.getElementById('open__modal-repair');
+const openModalUsedIphones = document.getElementById('open__modal-used--iphones');
 const closeModal = document.getElementById('close__modal');
 const modal = document.getElementById('modal');
 const modalRepair = document.getElementById('modal__repair');
+const modalUsedIphones = document.getElementById('modal__used-iphones');
 
 openModal.addEventListener('click', function (e) {
 	e.preventDefault();
@@ -44,4 +46,13 @@ openModalRepair.addEventListener('click', function (e) {
 
 closeModal.addEventListener('click', () => {
 	modalRepair.classList.remove('active');
+})
+
+openModalUsedIphones.addEventListener('click', function (e) {
+	e.preventDefault();
+	modalUsedIphones.classList.add('active');
+})
+
+closeModal.addEventListener('click', () => {
+	modalUsedIphones.classList.remove('active');
 })

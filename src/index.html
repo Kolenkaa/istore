@@ -230,7 +230,7 @@
 				<div class="service__used-iphones--content">
 					<h2 class="service__used-iphones--title">Б/У iPhone в наличии</h2>
 					<p class="service__used-iphones--description">Купите или поменяйте свой iPhone с доплатой</p>
-					<button class="btn service__used-iphones--btn">
+					<button class="btn service__used-iphones--btn" id="open__modal-used--iphones">
 						<a href="">
 							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="16" cy="16" r="15" stroke="black" stroke-width="2" />
@@ -495,7 +495,7 @@
 		</div>
 	</section>
 	<section class="modal__repair" id="modal__repair">
-		<div class="modal__repair-container">
+		<div class="modal__container">
 			<div class="modal__repair-body">
 				<h3 class="modal__repair-title">Гарантийный и постгарантийный ремонт</h3>
 				<p class="modal__repair-subtitle">Мы проводим все виды ремонта iPhone, iPad и Macbook</p>
@@ -555,6 +555,63 @@
 				<span></span>
 				<p class="modal__repair-description">У нас можно обменять по гарантии неисправное устройство,
 					приобретенное в любой стране</p>
+				<button class="modal__close-btn" type="button" id="close__modal">
+					<svg width="24" height="24" fill="#CBCBCB" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M11.9047 1.42871c-5.7758 0-10.47623 4.70044-10.47623 10.47619 0 5.7757 4.70043 10.4762 10.47623 10.4762 5.7757 0 10.4761-4.7005 10.4761-10.4762 0-5.77575-4.7004-10.47619-10.4761-10.47619Zm4.148 13.94719c.186.186.186.4911 0 .6771-.0949.0892-.2139.1376-.3384.1376-.1247 0-.2438-.0484-.3386-.1376l-3.471-3.471-3.47105 3.471c-.09487.0892-.21393.1376-.33843.1376-.12469 0-.24375-.0484-.33863-.1376-.186-.186-.186-.4911 0-.6771l3.47101-3.471-3.47101-3.471c-.186-.186-.186-.49106 0-.67706s.49106-.186.67706 0l3.47105 3.47096 3.471-3.47096c.186-.186.491-.186.677 0 .186.186.186.49106 0 .67706l-3.471 3.471 3.471 3.471Z" />
+					</svg>
+
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="modal__used-iphones" id="modal__used-iphones">
+		<div class="modal__container">
+			<div class="modal__used-iphones-body">
+				<h3 class="modal__repair-title">Б/У iPhone в наличии</h3>
+				<p class="modal__repair-subtitle">Эти и многие другие телефоны в наличии в нашем салоне. Приходите,
+					выбирайте и поменяйте свой старый iPhone на новый!</p>
+				<div class="modal__used-iphones--gallery gallery">
+					<div class="gallery__item">
+						<img src="/assets/images/modal_used--iphones/photo-iphone8.png" alt="фото iPhone 8">
+						<h5 class="gallery__title">iPhone 8</h5>
+						<p class="gallery__description">В безупречном состоянии 5/5.
+							Всегда в чехле и под стеклом. Хороший
+							аккумулятор и новый комплект!</p>
+					</div>
+					<div class="gallery__item">
+						<img src="/assets/images/modal_used--iphones/photo-iphoneSE.png" alt="фото iPhoneSE">
+						<h5 class="gallery__title">iPhone SE</h5>
+						<p class="gallery__description">В безупречном состоянии 5/5. Живые фото и гарантия по супер цене!
+						</p>
+					</div>
+					<div class="gallery__item">
+						<img src="/assets/images/modal_used--iphones/photo-iphone6S.png" alt="фото iPhone 6S">
+						<h5 class="gallery__title">iPhone 6S</h5>
+						<p class="gallery__description">iPhone 6s в золотом, розовом, черном и
+							сером цветах. Состояние 5-5, есть мелкие следы по корпусу.
+						</p>
+					</div>
+					<div class="gallery__item">
+						<img src="/assets/images/modal_used--iphones/photo-iphone8.png" alt="фото iPhone 11S">
+						<h5 class="gallery__title">iPhone 11S</h5>
+						<p class="gallery__description">В безупречном состоянии 5/5.
+							Всегда в чехле и под стеклом. Хороший
+							аккумулятор и новый комплект!</p>
+					</div>
+					<div class="gallery__item">
+						<img src="/assets/images/modal_used--iphones/photo-iphoneSE.png" alt="фото iPhone 9">
+						<h5 class="gallery__title">iPhone 9</h5>
+						<p class="gallery__description">В безупречном состоянии 5/5. Живые фото и гарантия по супер цене!</p>
+					</div>
+					<div class="gallery__item">
+						<img src="/assets/images/modal_used--iphones/photo-iphone6S.png" alt="фото iPhone 10E">
+						<h5 class="gallery__title">iPhone 10E</h5>
+						<p class="gallery__description">iPhone 10E в золотом, розовом, черном и
+							сером цветах. Состояние 5-5, есть мелкие следы по корпусу.
+						</p>
+					</div>
+				</div>
 				<button class="modal__close-btn" type="button" id="close__modal">
 					<svg width="24" height="24" fill="#CBCBCB" xmlns="http://www.w3.org/2000/svg">
 						<path

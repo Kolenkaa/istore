@@ -750,7 +750,6 @@ main {
 		height: 356px;
 		margin: auto;
 		background-color: #ffffff;
-
 		border-radius: 24px;
 		overflow: hidden;
 	}
@@ -778,9 +777,6 @@ main {
 		margin-top: 12px;
 		position: relative;
 		width: 312px;
-	}
-
-	&__call-order--user---tel {
 	}
 
 	&__call-order--number---tel {
@@ -861,12 +857,6 @@ main {
 		z-index: 999;
 	}
 
-	&__repair-container {
-		display: flex;
-		width: 100%;
-		height: 100%;
-	}
-
 	&__repair-body {
 		position: relative;
 		width: 1112px;		
@@ -896,9 +886,6 @@ main {
 		margin-top: 88px;
 		display: flex;
 		justify-content: space-between;
-	}
-
-	&__repair-types {
 	}
 
 	&__repair-inner,
@@ -954,3 +941,61 @@ span {
 .modal__repair.active {
 	display: block;
 }
+
+/*-------------MODAL USED-IPHONES------------------*/
+
+.modal {
+	&__used-iphones {
+		display: none;
+		background-color: rgba(0, 0, 0, 0.64);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 999;
+		overflow-y: auto;
+	}
+
+	&__used-iphones-body {
+		position: relative;
+		width: 1112px;		
+		margin: auto;
+		background-color: #ffffff;
+		border-radius: 24px;
+		padding: 84px 66px;
+	}
+
+	&__used-iphones--gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+.gallery {
+
+	&__item {
+		margin-top: 64px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #000000;
+		margin-top: 20px;
+	}
+
+	&__description {
+		line-height: 24px;
+		text-align: left;
+		margin-top: 8px;
+		max-width: 272px;
+	}
+}
+
+.modal__used-iphones.active {
+	display: block;
+}
+
