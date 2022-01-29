@@ -19,3 +19,29 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 
 });
+
+/*-----------modal-------------------------*/
+
+const openModal = document.getElementById('open__modal');
+const openModalRepair = document.getElementById('open__modal-repair');
+const closeModal = document.getElementById('close__modal');
+const modal = document.getElementById('modal');
+const modalRepair = document.getElementById('modal__repair');
+
+openModal.addEventListener('click', function (e) {
+	e.preventDefault();
+	modal.classList.add('active');
+})
+
+closeModal.addEventListener('click', () => {
+	modal.classList.remove('active');
+})
+
+openModalRepair.addEventListener('click', function (e) {
+	e.preventDefault();
+	modalRepair.classList.add('active');
+})
+
+closeModal.addEventListener('click', () => {
+	modalRepair.classList.remove('active');
+})

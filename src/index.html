@@ -157,7 +157,7 @@
 						<p class="home-page__call-description">Бесплатная диагностика. Выезд мастера. Все виды ремонта. Любая
 							техника
 							Apple. Trade-In. Без выходных. </p>
-						<button class="btn home-pade__call-btn">Заказать звонок</button>
+						<button class="btn home-pade__call-btn" id="open__modal">Заказать звонок</button>
 					</div>
 					<img class="home-page__call-photo" src="/assets/images/home_pade/home-photo.png"
 						alt="фото iphone на главной странице">
@@ -211,7 +211,7 @@
 					<h2 class="service__warranty-repair--title">Гарантийный и постгарантийный ремонт</h2>
 					<p class="service__warranty-repair--description">Замена Phone, iPad, Macbook по международной гарантии!
 						Все виды ремонта</p>
-					<button class="btn service__warranty-repair--btn">
+					<button class="btn service__warranty-repair--btn" id="open__modal-repair">
 						<a href="">
 							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="16" cy="16" r="15" stroke="black" stroke-width="2" />
@@ -465,28 +465,107 @@
 	<section class="modal" id="modal">
 		<div class="modal__container">
 			<div class="modal__body">
-				<h2 class="modal__title">Хотите, чтобы мы связались с вами?</h2>
-				<p class="modal__description">Оставьте свой телефон, и мы вам перезвоним</p>
-				<form action="https://echo.htmlacademy.ru" method="post" class="modal__call-order--form">
-					<div class="modal__call-order--user---tel">
-						<input class="modal__call-order--number---tel" type="tel" name="number" id="user-number"
-							placeholder="+375 ( 29 ) 588 34 49">
-						<button class="btn modal__call-order--btn" type="submit">Отправить
-						</button>
-					</div>
-				</form>
-				<p class="modal__call-order--personal---data">Нажимая на кнопку отправить, вы соглашаетесь на обработку персональных данных.</p>
-			</div>
-			<div class="modal__photo">
-				<img src="/assets/images/modal/photo-store.png" alt="фото appstore">
-			</div>	
-			<button class="modal__close-btn" type="button" id="close__modal">
-				<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M10.9049 0.428467C5.12915 0.428467 0.428711 5.1289 0.428711 10.9047C0.428711 16.6804 5.12915 21.3808 10.9049 21.3808C16.6806 21.3808 21.3811 16.6804 21.3811 10.9047C21.3811 5.1289 16.6806 0.428467 10.9049 0.428467ZM15.053 14.3757C15.239 14.5617 15.239 14.8667 15.053 15.0527C14.9581 15.142 14.839 15.1903 14.7145 15.1903C14.5898 15.1903 14.4708 15.142 14.3759 15.0527L10.9049 11.5817L7.4339 15.0527C7.33902 15.142 7.21996 15.1903 7.09546 15.1903C6.97077 15.1903 6.85171 15.142 6.75684 15.0527C6.57084 14.8667 6.57084 14.5617 6.75684 14.3757L10.2278 10.9047L6.75684 7.43365C6.57084 7.24765 6.57084 6.94259 6.75684 6.75659C6.94284 6.57059 7.2479 6.57059 7.4339 6.75659L10.9049 10.2276L14.3759 6.75659C14.5619 6.57059 14.867 6.57059 15.053 6.75659C15.239 6.94259 15.239 7.24765 15.053 7.43365L11.582 10.9047L15.053 14.3757Z" fill="#CBCBCB"/>
+				<div class="modal__content">
+					<h2 class="modal__title">Хотите, чтобы мы связались с вами?</h2>
+					<p class="modal__description">Оставьте свой телефон, и мы вам перезвоним</p>
+					<form class="modal__call-order--form">
+						<div class="modal__call-order--user---tel">
+							<input class="modal__call-order--number---tel" type="tel" name="number" id="user-number"
+								placeholder="+375 (29) 588 34 49">
+							<button class="btn modal__call-order--btn" type="submit">Отправить
+							</button>
+						</div>
+					</form>
+					<p class="modal__call-order--invalid---num">Проверьте, пожалуйста, корректность номера телефона</p>
+					<p class="modal__call-order--personal---data">Нажимая на кнопку отправить, вы соглашаетесь на обработку
+						персональных данных.</p>
+				</div>
+				<div class="modal__photo">
+					<img src="/assets/images/modal/photo-store.png" alt="фото appstore">
+				</div>
+				<button class="modal__close-btn" type="button" id="close__modal">
+					<svg width="24" height="24" fill="#CBCBCB" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M11.9047 1.42871c-5.7758 0-10.47623 4.70044-10.47623 10.47619 0 5.7757 4.70043 10.4762 10.47623 10.4762 5.7757 0 10.4761-4.7005 10.4761-10.4762 0-5.77575-4.7004-10.47619-10.4761-10.47619Zm4.148 13.94719c.186.186.186.4911 0 .6771-.0949.0892-.2139.1376-.3384.1376-.1247 0-.2438-.0484-.3386-.1376l-3.471-3.471-3.47105 3.471c-.09487.0892-.21393.1376-.33843.1376-.12469 0-.24375-.0484-.33863-.1376-.186-.186-.186-.4911 0-.6771l3.47101-3.471-3.47101-3.471c-.186-.186-.186-.49106 0-.67706s.49106-.186.67706 0l3.47105 3.47096 3.471-3.47096c.186-.186.491-.186.677 0 .186.186.186.49106 0 .67706l-3.471 3.471 3.471 3.471Z" />
 					</svg>
-			</button>		
-		</div>		
+
+				</button>
+			</div>
+
+		</div>
 	</section>
+	<section class="modal__repair" id="modal__repair">
+		<div class="modal__repair-container">
+			<div class="modal__repair-body">
+				<h3 class="modal__repair-title">Гарантийный и постгарантийный ремонт</h3>
+				<p class="modal__repair-subtitle">Мы проводим все виды ремонта iPhone, iPad и Macbook</p>
+				<div class="modal__repair-blocks">
+					<div class="modal__repair-types">
+						<div class="modal__repair-inner">
+							<img src="/assets/images/modal_repair/icon-inner.svg" alt="">
+							<h4 class="modal__repair-inner--subtitle">Внутренний</h4>
+						</div>
+						<ul class="modal__repair-item">
+							<li>Замена микросхем</li>
+							<li>Шлейфов</li>
+							<li>Динамиков
+							</li>
+							<li>Разъёмов
+							</li>
+							<li>Восстановление плат
+							</li>
+							<li>"Просушка"</li>
+						</ul>
+					</div>
+					<div class="modal__repair-types">
+						<div class="modal__repair-outside">
+							<img src="/assets/images/modal_repair/icon-outside.svg" alt="">
+							<h4 class="modal__repair-outside--subtitle">Внешний</h4>
+						</div>
+						<ul class="modal__repair-item">
+							<li>Замена экрана</li>
+							<li>ЖКИ</li>
+							<li>Модульный ремонт
+							</li>
+							<li>Замена корпуса
+							</li>
+							<li>Аксессуары и д.р.
+							</li>
+						</ul>
+					</div>
+					<div class="modal__repair-types">
+						<div class="modal__repair-program">
+							<img src="/assets/images/modal_repair/icon-program.svg" alt="">
+							<h4 class="modal__repair-program--subtitle">Программный</h4>
+						</div>
+						<ul class="modal__repair-item">
+							<li>Разблокировка</li>
+							<li>Восстановление данных
+							</li>
+							<li>Создание Apple ID
+							</li>
+							<li>Настройка iCloud
+							</li>
+							<li>Установка ПО, навигации
+							</li>
+							<li>Перенос данных с\на</li>
+						</ul>
+					</div>
+				</div>
+				<span></span>
+				<p class="modal__repair-description">У нас можно обменять по гарантии неисправное устройство,
+					приобретенное в любой стране</p>
+				<button class="modal__close-btn" type="button" id="close__modal">
+					<svg width="24" height="24" fill="#CBCBCB" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M11.9047 1.42871c-5.7758 0-10.47623 4.70044-10.47623 10.47619 0 5.7757 4.70043 10.4762 10.47623 10.4762 5.7757 0 10.4761-4.7005 10.4761-10.4762 0-5.77575-4.7004-10.47619-10.4761-10.47619Zm4.148 13.94719c.186.186.186.4911 0 .6771-.0949.0892-.2139.1376-.3384.1376-.1247 0-.2438-.0484-.3386-.1376l-3.471-3.471-3.47105 3.471c-.09487.0892-.21393.1376-.33843.1376-.12469 0-.24375-.0484-.33863-.1376-.186-.186-.186-.4911 0-.6771l3.47101-3.471-3.47101-3.471c-.186-.186-.186-.49106 0-.67706s.49106-.186.67706 0l3.47105 3.47096 3.471-3.47096c.186-.186.491-.186.677 0 .186.186.186.49106 0 .67706l-3.471 3.471 3.471 3.471Z" />
+					</svg>
+
+				</button>
+			</div>
+		</div>
+	</section>
+
 
 	<script src="/js/script.js"></script>
 </body>

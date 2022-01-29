@@ -727,15 +727,35 @@ main {
 /*------------ MODAL -----------*/
 
 .modal {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.64);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+
 	&__container {
 		display: flex;
-		width: 696px;
-		height: 356px;
-		border-radius: 20px;
-		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 
 	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		width: 696px;
+		height: 356px;
+		margin: auto;
+		background-color: #ffffff;
+
+		border-radius: 24px;
+		overflow: hidden;
+	}
+
+	&__content {
 		padding: 64px 0 0 64px;
 	}
 
@@ -757,6 +777,7 @@ main {
 	&__call-order--form {
 		margin-top: 12px;
 		position: relative;
+		width: 312px;
 	}
 
 	&__call-order--user---tel {
@@ -776,8 +797,16 @@ main {
 		line-height: 16px;
 		color: #ffffff;
 		top: 5px;
-		right: 5px;
+		right: -5px;
 		border: none;
+	}
+
+	&__call-order--invalid---num {
+		display: none;
+		color: #f00;
+		font-size: 12px;
+		line-height: 14px;
+		margin-top: 8px;
 	}
 
 	&__call-order--personal---data {
@@ -791,13 +820,137 @@ main {
 	&__photo {
 	}
 
+	&__call-order--btn:hover {
+		background-color: rgba(44, 109, 236, 0.72);
+	}
+
+	&__call-order--btn:active {
+		background-color: #003eb8;
+	}
+
 	&__close-btn {
 		border: none;
 		background-color: transparent;
 		position: absolute;
-		right: 60px;
-		top: 5px;
+		right: 18px;
+		top: 18px;
+		cursor: pointer;
+	}
+
+	&__close-btn svg:hover {
+		fill: #333333;
 	}
 }
-.btn {
+
+.modal.active,
+.modal__call-order--invalid---num.active {
+	display: block;
+}
+
+/*-----------MODAL-REPAIR-------------*/
+
+.modal {
+	&__repair {
+		display: none;
+		background-color: rgba(0, 0, 0, 0.64);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 999;
+	}
+
+	&__repair-container {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__repair-body {
+		position: relative;
+		width: 1112px;		
+		margin: auto;
+		background-color: #ffffff;
+		border-radius: 24px;
+		padding: 66px;
+	}
+
+	&__repair-title {
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 32px;
+		color: #000000;
+		text-align: center;
+	}
+
+	&__repair-subtitle {
+		font-size: 18px;
+		line-height: 24px;
+		color: #5b5b5b;
+		text-align: center;
+		margin-top: 8px;
+	}
+
+	&__repair-blocks {
+		margin-top: 88px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__repair-types {
+	}
+
+	&__repair-inner,
+	&__repair-outside,
+	&__repair-program {
+		display: flex;
+	}
+
+	&__repair-inner--subtitle,
+	&__repair-outside--subtitle,
+	&__repair-program--subtitle {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 27px;
+		color: #000000;
+		margin-left: 24px;
+	}
+
+	&__repair-item {
+		margin-top: 24px;
+		font-size: 16px;
+		line-height: 28px;
+		color: #5b5b5b;
+	}
+
+	&__repair-item > li {
+		list-style: inside;
+	}
+
+	&__repair-description {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+		color: #000000;		
+		text-align: center;
+		max-width: 530px;
+		margin: 0 auto;
+	}
+}
+
+span {
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: #cbcbcb;
+		margin-top: 62px;
+		margin-bottom: 45px;
+	}
+}
+
+.modal__repair.active {
+	display: block;
 }

@@ -507,54 +507,162 @@ main {
     align-self: end; }
 
 /*------------ MODAL -----------*/
-.modal__container {
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.64);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999; }
+  .modal__container {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+  .modal__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 696px;
+    height: 356px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 24px;
+    overflow: hidden; }
+  .modal__content {
+    padding: 64px 0 0 64px; }
+  .modal__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #000000;
+    max-width: 312px; }
+  .modal__description {
+    font-weight: 500;
+    line-height: 20px;
+    color: #5b5b5b;
+    margin-top: 32px; }
+  .modal__call-order--form {
+    margin-top: 12px;
+    position: relative;
+    width: 312px; }
+  .modal__call-order--number---tel {
+    padding: 16px 132px 16px 16px;
+    border-radius: 8px; }
+  .modal__call-order--btn {
+    position: absolute;
+    padding: 12px 16px;
+    background-color: #2c6dec;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ffffff;
+    top: 5px;
+    right: -5px;
+    border: none; }
+  .modal__call-order--invalid---num {
+    display: none;
+    color: #f00;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 8px; }
+  .modal__call-order--personal---data {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    opacity: 24%;
+    margin-top: 12px;
+    max-width: 312px; }
+  .modal__call-order--btn:hover {
+    background-color: rgba(44, 109, 236, 0.72); }
+  .modal__call-order--btn:active {
+    background-color: #003eb8; }
+  .modal__close-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    cursor: pointer; }
+  .modal__close-btn svg:hover {
+    fill: #333333; }
+
+.modal.active,
+.modal__call-order--invalid---num.active {
+  display: block; }
+
+/*-----------MODAL-REPAIR-------------*/
+.modal__repair {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.64);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999; }
+.modal__repair-container {
   display: flex;
-  width: 696px;
-  height: 356px;
-  border-radius: 20px;
-  position: relative; }
-.modal__body {
-  padding: 64px 0 0 64px; }
-.modal__title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 36px;
-  color: #000000;
-  max-width: 312px; }
-.modal__description {
+  width: 100%;
+  height: 100%; }
+.modal__repair-body {
+  position: relative;
+  width: 1112px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 66px; }
+.modal__repair-title {
   font-weight: 500;
-  line-height: 20px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center; }
+.modal__repair-subtitle {
+  font-size: 18px;
+  line-height: 24px;
   color: #5b5b5b;
-  margin-top: 32px; }
-.modal__call-order--form {
-  margin-top: 12px;
-  position: relative; }
-.modal__call-order--number---tel {
-  padding: 16px 132px 16px 16px;
-  border-radius: 8px; }
-.modal__call-order--btn {
-  position: absolute;
-  padding: 12px 16px;
-  background-color: #2c6dec;
-  border-radius: 4px;
+  text-align: center;
+  margin-top: 8px; }
+.modal__repair-blocks {
+  margin-top: 88px;
+  display: flex;
+  justify-content: space-between; }
+.modal__repair-inner, .modal__repair-outside, .modal__repair-program {
+  display: flex; }
+.modal__repair-inner--subtitle, .modal__repair-outside--subtitle, .modal__repair-program--subtitle {
   font-weight: 500;
-  line-height: 16px;
-  color: #ffffff;
-  top: 5px;
-  right: 5px;
-  border: none; }
-.modal__call-order--personal---data {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 27px;
   color: #000000;
-  opacity: 24%;
-  margin-top: 12px;
-  max-width: 312px; }
-.modal__close-btn {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  right: 60px;
-  top: 5px; }
+  margin-left: 24px; }
+.modal__repair-item {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5b5b5b; }
+.modal__repair-item > li {
+  list-style: inside; }
+.modal__repair-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-align: center;
+  max-width: 530px;
+  margin: 0 auto; }
+
+span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cbcbcb;
+  margin-top: 62px;
+  margin-bottom: 45px; }
+
+.modal__repair.active {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
