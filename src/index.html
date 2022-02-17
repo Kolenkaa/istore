@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" />
-	<title>Iphone</title>
+	<title>Istore</title>
 </head>
 
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container">
+		<div class="header__container">
 			<div class="header__top">
 				<div class="header__contacts">
 					<div class="header__contacts-adress">
@@ -82,11 +82,11 @@
 				</nav>
 			</div>
 			<div class="mobile-menu">
-				<div class="mobile-menu--header">
+				<div class="mobile-menu__header">
 					<div class="burger" id="burger">
 						<span></span>
 					</div>
-					<div class="mobile-menu--logo">
+					<div class="mobile-menu__logo">
 						<a href="">
 							<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -95,7 +95,7 @@
 							</svg>
 						</a>
 					</div>
-					<div class="mobile-menu--phoneicons phoneicons" id="images">
+					<div class="mobile-menu__phoneicons phoneicons" id="images">
 						<a class="phoneicons__link">
 							<svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#a)">
@@ -114,8 +114,8 @@
 							</svg>
 						</a>
 					</div>
-					<div class="mobile-menu--phoneicons---close phoneicons-close" id="images">
-						<a class="phoneicons__link-close">
+					<div class="mobile-menu__phoneicons-close phoneicons-close" id="images">
+						<a class="phoneicons-close__link">
 							<svg width="19" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M2.35969.00585938 1.00556 1.35998l7.54463 7.54463L.960938 16.5089 2.30025 17.848l7.60406-7.5893 7.58929 7.5893 1.3541-1.3541-7.5893-7.58929 7.5447-7.54463L17.4489.00585938 9.90431 7.55048 2.35969.00585938Z"
@@ -124,7 +124,7 @@
 						</a>
 					</div>
 				</div>
-				<nav class="mobile-menu--navigation">
+				<nav class="mobile-menu__navigation navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
 							<a href="" class="navigation__link">Ремонт техники</a>
@@ -383,9 +383,7 @@
 				</div>
 				<div class="footer__data-us">
 					<div class="footer__map">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29830.76667120523!2d44.40185279836476!3d48.63487231185034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41052d5bb5aa296d%3A0x13b316756fd24d22!2z0YPQuy4g0KHRgtGA0YPQs9Cw0YbQutC40YUsIDI3LCDQk9C-0YDQvdCw0Y8g0J_QvtC70Y_QvdCwLCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDQwMDA3OQ!5e0!3m2!1sru!2sby!4v1643290010179!5m2!1sru!2sby"
-							width="148" height="148" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A65e2e8fc6bb88dac9eb5a48d70c5889b0795dd4b69716fde6eb1422d87ae46eb&amp;source=constructor" width="148" height="148" frameborder="0"></iframe>
 					</div>
 					<div class="footer__contacts">
 						<p class="footer__contacts-description">Наши контакты:</p>
@@ -552,7 +550,7 @@
 						</ul>
 					</div>
 				</div>
-				<span></span>
+				<span class="modal__repair-underline"></span>
 				<p class="modal__repair-description">У нас можно обменять по гарантии неисправное устройство,
 					приобретенное в любой стране</p>
 				<button class="modal__close-btn" type="button" id="close__modal">

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const burger = document.querySelector(".burger");
-	const mobileMenu = document.querySelector(".mobile-menu--navigation");
-	const mobilePhoneIcons = document.querySelector(".mobile-menu--phoneicons");
+	const mobileMenu = document.querySelector(".mobile-menu__navigation");
+	const mobilePhoneIcons = document.querySelector(".mobile-menu__phoneicons");
 	const mobileContacts = document.querySelector(".header__top");
 
 	burger.onclick = function (event) {
