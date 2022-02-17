@@ -494,8 +494,9 @@ main {
 
 	&__image {
 		position: relative;
-		width: 100%;
-		max-width: 1440px;
+		//width: 100%;
+		//max-width: 1440px;
+		width: 1440px;
 		height: auto;
 	}
 }
@@ -512,14 +513,15 @@ main {
 	&__used-iphones {
 		position: relative;
 		width: 50%;
-		max-height: 496px;
+		height: 496px;
 	}
 
 	&__warranty-repair--content,
 	&__used-iphones--content {
 		position: absolute;
 		z-index: 1;
-		padding: 56px 0 0 56px;
+		width: 100%;
+		padding: 56px;
 	}
 
 	&__warranty-repair--title,
@@ -553,11 +555,8 @@ main {
 	&__warranty-repair--image,
 	&__used-iphones--image {
 		max-width: 720px;
-		max-height: 496px;
-		//position: relative;
 		width: 100%;
-		max-width: 1440px;
-		height: auto;
+		height: 496px;
 		cursor: pointer;
 	}
 

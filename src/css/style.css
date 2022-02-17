@@ -333,8 +333,7 @@ main {
     margin-top: 4px; }
   .location__image {
     position: relative;
-    width: 100%;
-    max-width: 1440px;
+    width: 1440px;
     height: auto; }
 
 /*----------SERVICE-----------*/
@@ -346,11 +345,12 @@ main {
   .service__warranty-repair, .service__used-iphones {
     position: relative;
     width: 50%;
-    max-height: 496px; }
+    height: 496px; }
   .service__warranty-repair--content, .service__used-iphones--content {
     position: absolute;
     z-index: 1;
-    padding: 56px 0 0 56px; }
+    width: 100%;
+    padding: 56px; }
   .service__warranty-repair--title, .service__used-iphones--title {
     font-weight: 500;
     font-size: 24px;
@@ -369,10 +369,8 @@ main {
     overflow: hidden; }
   .service__warranty-repair--image, .service__used-iphones--image {
     max-width: 720px;
-    max-height: 496px;
     width: 100%;
-    max-width: 1440px;
-    height: auto;
+    height: 496px;
     cursor: pointer; }
   .service__warranty-repair--image:hover, .service__used-iphones--image:hover {
     transform: scale(1.3);
