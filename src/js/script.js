@@ -22,37 +22,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*-----------modal-------------------------*/
 
-const openModal = document.getElementById('open__modal');
-const openModalRepair = document.getElementById('open__modal-repair');
-const openModalUsedIphones = document.getElementById('open__modal-used--iphones');
-const closeModal = document.getElementById('close__modal');
-const modal = document.getElementById('modal');
-const modalRepair = document.getElementById('modal__repair');
+const requestCallOpenModal = document.getElementById('open__modal-request--call');
+const repairIphoneOpenModal = document.getElementById('open__modal-repair--iphone');
+const usedIphoneOpenModal = document.getElementById('open__modal-used--iphones');
+
+const modalRequestCall = document.getElementById('modal__request-call');
+const modalRepairIphone = document.getElementById('modal__repair-iphone');
 const modalUsedIphones = document.getElementById('modal__used-iphones');
 
-openModal.addEventListener('click', function (e) {
+const requestCallCloseModal = document.getElementById('close__modal-request--call');
+const repairIphoneCloseModal = document.getElementById('close__modal-repair--iphone');
+const usedIphonesCloseModal = document.getElementById('close__modal-used--iphone');
+
+requestCallOpenModal.addEventListener('click', function (e) {
 	e.preventDefault();
-	modal.classList.add('active');
+	modalRequestCall.classList.add('active');
 })
 
-closeModal.addEventListener('click', () => {
-	modal.classList.remove('active');
+requestCallCloseModal.addEventListener('click', () => {
+	modalRequestCall.classList.remove('active');
 })
 
-openModalRepair.addEventListener('click', function (e) {
+repairIphoneOpenModal.addEventListener('click', function (e) {
 	e.preventDefault();
-	modalRepair.classList.add('active');
+	modalRepairIphone.classList.add('active');
 })
 
-closeModal.addEventListener('click', () => {
-	modalRepair.classList.remove('active');
+repairIphoneCloseModal.addEventListener('click', () => {
+	modalRepairIphone.classList.remove('active');
 })
 
-openModalUsedIphones.addEventListener('click', function (e) {
+usedIphoneOpenModal.addEventListener('click', function (e) {
 	e.preventDefault();
 	modalUsedIphones.classList.add('active');
 })
 
-closeModal.addEventListener('click', () => {
+usedIphonesCloseModal.addEventListener('click', () => {
 	modalUsedIphones.classList.remove('active');
 })
