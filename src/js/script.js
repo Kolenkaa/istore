@@ -34,29 +34,43 @@ const requestCallCloseModal = document.getElementById('close__modal-request--cal
 const repairIphoneCloseModal = document.getElementById('close__modal-repair--iphone');
 const usedIphonesCloseModal = document.getElementById('close__modal-used--iphone');
 
-requestCallOpenModal.addEventListener('click', function (e) {
+
+
+function handleOpenRequestACallModal(e) {
 	e.preventDefault();
-	modalRequestCall.classList.add('active');
-})
+	modalRequestCall.classList.add("active");
+}
 
-requestCallCloseModal.addEventListener('click', () => {
-	modalRequestCall.classList.remove('active');
-})
+function handleCloseRequestACallModal(e) {
+	modalRequestCall.classList.remove("active");
+}
 
-repairIphoneOpenModal.addEventListener('click', function (e) {
+function handleOpenRepairIphoneModal(e) {
 	e.preventDefault();
-	modalRepairIphone.classList.add('active');
-})
+	modalRepairIphone.classList.add("active");
+}
 
-repairIphoneCloseModal.addEventListener('click', () => {
-	modalRepairIphone.classList.remove('active');
-})
+function handleCloseRepairIphoneModal(e) {
+	modalRepairIphone.classList.remove("active");
+}
 
-usedIphoneOpenModal.addEventListener('click', function (e) {
+function handleOpenUsedIphoneModal(e) {
 	e.preventDefault();
-	modalUsedIphones.classList.add('active');
-})
+	modalUsedIphones.classList.add("active");
+}
 
-usedIphonesCloseModal.addEventListener('click', () => {
-	modalUsedIphones.classList.remove('active');
-})
+function handleCloseUsedIphoneModal(e) {
+	modalUsedIphones.classList.remove("active");
+}
+
+requestCallOpenModal.addEventListener("click", handleOpenRequestACallModal);
+
+requestCallCloseModal.addEventListener("click", handleCloseRequestACallModal);
+
+repairIphoneOpenModal.addEventListener("click", handleOpenRepairIphoneModal);
+
+repairIphoneCloseModal.addEventListener("click", handleCloseRepairIphoneModal);
+
+usedIphoneOpenModal.addEventListener("click", handleOpenUsedIphoneModal);
+
+usedIphonesCloseModal.addEventListener("click", handleCloseUsedIphoneModal);
