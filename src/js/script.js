@@ -35,37 +35,46 @@ const repairIphoneCloseModal = document.getElementById('close__modal-repair--iph
 const usedIphonesCloseModal = document.getElementById('close__modal-used--iphone');
 
 
+
+
+function lockBodyScroll() {
+	document.body.style.overflowY = "hidden";
+}
+function unLockBodyScroll() {
+	document.body.style.overflowY = "";
+}
+
 function handleOpenRequestACallModal(e) {
 	e.preventDefault();
 	modalRequestCall.classList.add("active");
-	document.body.style.overflowY = "hidden";
+	lockBodyScroll();
 }
 
 function handleCloseRequestACallModal(e) {
 	modalRequestCall.classList.remove("active");
-	document.body.style.overflowY = "";
+	unLockBodyScroll();
 }
 
 function handleOpenRepairIphoneModal(e) {
 	e.preventDefault();
 	modalRepairIphone.classList.add("active");
-	document.body.style.overflowY = "hidden";
+	lockBodyScroll();
 }
 
 function handleCloseRepairIphoneModal(e) {
 	modalRepairIphone.classList.remove("active");
-	document.body.style.overflowY = "";
+	unLockBodyScroll();
 }
 
 function handleOpenUsedIphoneModal(e) {
 	e.preventDefault();
 	modalUsedIphones.classList.add("active");
-	document.body.style.overflowY = "hidden";
+	lockBodyScroll();
 }
 
 function handleCloseUsedIphoneModal(e) {
 	modalUsedIphones.classList.remove("active");
-	document.body.style.overflowY = "";
+	unLockBodyScroll();
 }
 
 requestCallOpenModal.addEventListener("click", handleOpenRequestACallModal);
@@ -79,13 +88,3 @@ repairIphoneCloseModal.addEventListener("click", handleCloseRepairIphoneModal);
 usedIphoneOpenModal.addEventListener("click", handleOpenUsedIphoneModal);
 
 usedIphonesCloseModal.addEventListener("click", handleCloseUsedIphoneModal);
-
-
-
-function StopScroll() {
-	if (condition) {
-
-	} else {
-
-	}
-}
