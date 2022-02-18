@@ -389,12 +389,7 @@ main {
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 104px;
   grid-row-gap: 80px; }
-  .service-list__repair-title, .service-list__diagnostics-title, .service-list__sale-accessories--title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 18px; }
-  .service-list__warranty-replacement--title, .service-list__sales-iphone--title, .service-list__help-master--title {
+  .service-list__repair-title, .service-list__diagnostics-title, .service-list__sale-accessories--title, .service-list__warranty-replacement--title, .service-list__sales-iphone--title, .service-list__help-master--title {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -405,6 +400,14 @@ main {
     color: #959595;
     margin-top: 12px; }
 
+/*---------- SERVICE LIST < 1365 px -----------*/
+@media (max-width: 1000px) {
+  .service-list {
+    padding: 70px 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 48px;
+    grid-row-gap: 60px; } }
 /*------------ FOOTER --------------*/
 .footer {
   position: relative;

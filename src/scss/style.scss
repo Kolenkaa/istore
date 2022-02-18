@@ -584,13 +584,7 @@ main {
 
 	&__repair-title,
 	&__diagnostics-title,
-	&__sale-accessories--title {
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 30px;
-		margin-top: 18px;
-	}
-
+	&__sale-accessories--title,
 	&__warranty-replacement--title,
 	&__sales-iphone--title,
 	&__help-master--title {
@@ -613,6 +607,17 @@ main {
 	}
 }
 
+/*---------- SERVICE LIST < 1365 px -----------*/
+
+@media (max-width: 1000px) {
+	.service-list {
+		padding: 70px 40px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-column-gap: 48px;
+		grid-row-gap: 60px;		
+	}
+}
 /*------------ FOOTER --------------*/
 
 .footer {
